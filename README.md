@@ -119,7 +119,15 @@ If you prefer to run the application locally without Docker, follow these steps:
    alembic upgrade head
    ```
 
-6. **Start the Application**
+6. **Seed The Database**
+
+   Seed the database with initial superadmin, roles and permissions:
+
+   ```bash
+   python -m app.core.init_db
+   ```
+
+7. **Start the Application**
 
    Run the application using `uvicorn`:
 
